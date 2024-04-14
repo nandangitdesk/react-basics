@@ -12,7 +12,7 @@
 // }
 
 // export default App
-
+//....................................................................................................
 // import React, { useState } from 'react'
 
 // function App() {
@@ -26,14 +26,11 @@
 // }
 
 // export default App
-//! mark matlab ulta false ka ulta true 
-
+//! mark matlab ulta false ka ulta true
 
 //----------------------------- INTERMEDIATE useState() -------------------------------------
 
 // in this we can received previous value and do update in setVal
-
-
 
 // import React, { useState } from 'react'
 
@@ -49,9 +46,7 @@
 
 // export default App
 
-
 //---------------------------------------------------------------------------------------------------------------------------
-
 
 // import React, { useState } from 'react'
 
@@ -78,7 +73,7 @@
 
 //.............................................................................................
 
-//react apni state turant nahi update karta 
+//react apni state turant nahi update karta
 
 // import React, { useState } from 'react'
 
@@ -102,10 +97,8 @@
 
 // export default App
 
-
 //..........................................................................................
 //useState() with Array
-
 
 // import React, { useState } from 'react'
 
@@ -123,20 +116,19 @@
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// import React, { useState } from 'react'
+import React, { useState } from 'react'
 
-// function App() {
-//  const[val,setVal]  = useState([1,2,3,4,5,6])
-//   return (
-//     <div  className='p-5'>
-//       {val.map((item,index)=><h1 key={index}>{item}</h1>)}
-//       <button onClick={()=>setVal(()=>val.filter((item,index)=>index!=2))} className='px-2 py-1 bg-blue-600 text-white text-xs rounded-full'>Click</button>
-//     </div>
-//   )
-// }
+function App() {
+ const[val,setVal]  = useState([1,2,3,4,5,6])
+  return (
+    <div  className='p-5'>
+      {val.map((item,index)=><h1 key={index}>{item}</h1>)}
+      <button onClick={()=>setVal(()=>val.filter((item,index)=>index!=2))} className='px-2 py-1 bg-blue-600 text-white text-xs rounded-full'>Click</button>
+    </div>
+  )
+}
 
-// export default App
-
+export default App
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -154,11 +146,9 @@
 
 // export default App
 
-
 //-------------------------------------------------------------------------------------------------------------------------
 
 //Arrays Addition
-
 
 // import React, { useState } from 'react'
 
@@ -186,15 +176,15 @@
 //  ])
 //   return (
 //     <div  className='p-5'>
-      
+
 //         {val.map((item)=>
 //           <div>
 //             <h1 >{item.Product}</h1>
 //             <h2>{item.price}</h2>
 //           </div>
-          
+
 //         )}
-  
+
 //       <button onClick={()=>setVal(val.map((item)=> item.Product==="Telivision"? {Product:"Telivision",price:20000}:item))}  className='px-2 py-1 bg-blue-600 text-white text-xs rounded-full'>Click</button>
 //     </div>
 //   )
@@ -202,10 +192,7 @@
 
 // export default App
 
-
 //........................ UseState() Hooks ..............................................
-
-
 
 // import React, { useState } from 'react'
 
@@ -225,28 +212,39 @@
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-import React, { useState } from 'react'
-import { FaArrowRightLong } from "react-icons/fa6";
+// import React, { useState } from "react";
+// import { FaArrowRightLong } from "react-icons/fa6";
 
-function App() {
-  const [val , setVal] = useState(false)
-  return (
-    <div className=' w-full h-screen bg-zinc-300 flex justify-center items-center'>
-        <div className='w-60 h-32 relative flex bg-zinc-500 rounded-md  overflow-hidden '>
-            <img className={` shrink-0 w-full h-full object-cover transition-transform duration-300 ease-out ${val=== false ? "-translate-x-[0%]" : "-translate-x-[100%]"}`} src="https://images.unsplash.com/photo-1709496023433-96b349a55946?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-            <img className={` shrink-0 w-full h-full object-cover transition-transform duration-300 ease-out ${val=== false ? "-translate-x-[0%]" : "-translate-x-[100%]"}`} src="https://images.unsplash.com/photo-1527086983597-b4d44c4a66d0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-            <span onClick={()=>setVal(()=>!val)} className={`${val===false ? "rotate-0" : "rotate-180"} absolute w-8 h-8 rounded-full bg-[#dadada8b] bottom-[1%] left-1/2 -translate-x-[50%] -translate-y-[50%] flex items-center justify-center `}>
-            <FaArrowRightLong />
-            </span>
-        </div>
-    </div>
-  )
-}
+// function App() {
+//   const [val, setVal] = useState(false);
+//   return (
+//     <div className=" w-full h-screen bg-zinc-300 flex justify-center items-center">
+//       <div className="w-60 h-32 relative flex bg-zinc-500 rounded-md  overflow-hidden ">
+//         <img
+//           className={` shrink-0 w-full h-full object-cover transition-transform duration-300 ease-out ${
+//             val === false ? "-translate-x-[0%]" : "-translate-x-[100%]"
+//           }`}
+//           src="https://images.unsplash.com/photo-1709496023433-96b349a55946?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+//           alt=""
+//         />
+//         <img
+//           className={` shrink-0 w-full h-full object-cover transition-transform duration-300 ease-out ${
+//             val === false ? "-translate-x-[0%]" : "-translate-x-[100%]"
+//           }`}
+//           src="https://images.unsplash.com/photo-1527086983597-b4d44c4a66d0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+//           alt=""
+//         />
+//         <span
+//           onClick={() => setVal(() => !val)}
+//           className={`${
+//             val === false ? "rotate-0" : "rotate-180"
+//           } absolute w-8 h-8 rounded-full bg-[#dadada8b] bottom-[1%] left-1/2 -translate-x-[50%] -translate-y-[50%] flex items-center justify-center `}
+//         >
+//           <FaArrowRightLong />
+//         </span>
+//       </div>
+//     </div>
+//   );
+// }
 
-export default App
-
-
-
-
-
-
+// export default App;
